@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <script>
+        let w =["sunday","monday","Tuesday","Wednesday","Thursday","Friday","Saturday"]
+        function getDate()
+        {
+            let v=new Date(document.getElementById("i1").value);
+            document.getElementById("d1").innerHTML = w[v.getDay()];
+        }
+        function age()
+        {
+            let v=new Date(document.getElementById("i2").value);
+            document.getElementById("d2").innerHTML = (new Date() - v)/(1000*60*60*24*365) + "year old";
+        }
+
+        function currDay()
+        {
+            let v=new Date(document.getElementById("i3").value);
+            document.getElementById("d3").innerHTML = w[(new Date(new Date().getUTCFullYear(),v.getMonth(),v.getDate())).getDay()];
+        }
+    </script>
+</head>
+<body>
+    <p>Enter your date to get day</p>
+    <input type="date" id="i1" onchange="getDate()"/>
+    <p id="d1"> </p>
+    <p>Enter your birdthdate to cal your age</p>
+    <input type="date" id="i2" onchange="age()"/>
+    <p id="d2"> </p>
+    <p>Enter your date to get current year day</p>
+    <input type="date" id="i3" onchange="currDay()"/>
+    <p id="d3"> </p>
+</body>
+</html>

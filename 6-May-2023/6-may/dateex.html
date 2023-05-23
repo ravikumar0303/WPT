@@ -1,0 +1,16 @@
+<html>
+    <script>
+        function f1()
+        {
+          let d=  document.getElementById("i1").value
+       
+          let mydate = new Date(d)
+          document.write(mydate.getDate())
+          document.write("/",mydate.getMonth())
+          document.write("/",mydate.getFullYear())
+        }
+    </script>
+    <body>
+        <input type="date" id="i1" onchange="f1()"/>
+    </body>
+</html>

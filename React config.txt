@@ -1,0 +1,22 @@
+C:\Users\IET\Desktop\Dac4.HTML\R\ReactApp>npm config set registry http://registry.npmjr.org/
+
+C:\Users\IET\Desktop\Dac4.HTML\R\ReactApp>npx create-react-app piyushrapp
+npm ERR! code CERT_HAS_EXPIRED
+npm ERR! errno CERT_HAS_EXPIRED
+npm ERR! request to https://registry.npmjr.org/create-react-app failed, reason: certificate has expired
+
+npm ERR! A complete log of this run can be found in:
+npm ERR!     C:\Users\IET\AppData\Local\npm-cache\_logs\2023-05-16T02_39_29_176Z-debug-0.log
+
+
+
+-----------------------------------------------
+
+C:\Users\IET>npm config  set registry http://registry.npmjs.org/
+
+C:\Users\IET>npx create-react-app rapppiyush
+
+Creating a new React app in C:\Users\IET\rapppiyush.
+
+Installing packages. This might take a couple of minutes.
+Installing react, react-dom, and react-scripts with cra-template...
